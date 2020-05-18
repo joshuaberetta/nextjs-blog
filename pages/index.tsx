@@ -47,13 +47,6 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={classes.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={classes.headingMd}>
         <h2 className={classes.headingLg}>Blog</h2>
         <ul className={classes.list}>
           {allPostsData.map(({ id, date, title }) => (

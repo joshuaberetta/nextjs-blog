@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { makeStyles } from "@material-ui/core";
+import { Avatar, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   container: {
@@ -49,7 +49,7 @@ export const siteTitle = "This is me :)";
 
 export default function Layout({
   children,
-  home,
+  home = true,
 }: {
   children: React.ReactNode;
   home?: boolean;
@@ -74,33 +74,15 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={classes.header}>
-        {home ? (
-          <>
-            <img
+        <Link href="/">
+          <a>
+            <Avatar
               src="/images/profile.jpg"
-              className={`${classes.headerHomeImage} ${classes.borderCircle}`}
+              // className={`${classes.headerImage} ${classes.borderCircle}`}
               alt={name}
             />
-            <h1 className={classes.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${classes.headerImage} ${classes.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={classes.headingLg}>
-              <Link href="/">
-                <a className={classes.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
+          </a>
+        </Link>
       </header>
       <main>{children}</main>
       {!home && (

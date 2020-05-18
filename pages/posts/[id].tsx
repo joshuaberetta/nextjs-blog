@@ -34,6 +34,7 @@ export default function Post({
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <article>
         <h1 className={classes.headingXl}>{postData.title}</h1>
