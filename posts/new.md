@@ -2,8 +2,9 @@
 title: A new post
 date: 'June 26, 2020 10:18 AM'
 ---
+![Ryan](/images/ryan.jpg "New hair cut!")
 
-# Heading 1
+# Ryan is pretty cool
 
 ## Heading 2
 
