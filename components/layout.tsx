@@ -44,12 +44,12 @@ const useStyles = makeStyles({
   },
 });
 
-const name = "Joshua Beretta";
-export const siteTitle = "This is me :)";
+const name = "Ryan Hudson";
+export const siteTitle = "Hey there :)";
 
 export default function Layout({
   children,
-  home = true,
+  home,
 }: {
   children: React.ReactNode;
   home?: boolean;
@@ -74,15 +74,33 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={classes.header}>
-        <Link href="/">
-          <a>
+        {home ? (
+          <>
             <Avatar
-              src="https://d281hw6jrax8rk.cloudfront.net/me.jpg"
-              className={`${classes.headerImage} ${classes.borderCircle}`}
+              src="https://d281hw6jrax8rk.cloudfront.net/ryan.jpg"
+              className={`${classes.headerHomeImage} ${classes.borderCircle}`}
               alt={name}
             />
-          </a>
-        </Link>
+            <h1 className={classes.heading2Xl}>{name}</h1>
+          </>
+        ) : (
+          <>
+            <Link href="/">
+              <a>
+                <Avatar
+                  src="https://d281hw6jrax8rk.cloudfront.net/ryan.jpg"
+                  className={`${classes.headerImage} ${classes.borderCircle}`}
+                  alt={name}
+                />
+              </a>
+            </Link>
+            <h2 className={classes.headingLg}>
+              <Link href="/">
+                <a className={classes.colorInherit}>{name}</a>
+              </Link>
+            </h2>
+          </>
+        )}
       </header>
       <main>{children}</main>
       {!home && (
