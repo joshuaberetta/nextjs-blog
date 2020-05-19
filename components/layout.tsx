@@ -78,7 +78,7 @@ export default function Layout({
           <a>
             <Avatar
               src="/images/profile.jpg"
-              // className={`${classes.headerImage} ${classes.borderCircle}`}
+              className={`${classes.headerImage} ${classes.borderCircle}`}
               alt={name}
             />
           </a>

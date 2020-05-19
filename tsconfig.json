@@ -18,5 +18,11 @@
     "strictNullChecks": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "declaration.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "declaration.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/_document.jsx"
+  ]
 }
