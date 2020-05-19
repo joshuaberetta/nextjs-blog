@@ -77,7 +77,7 @@ export default function Layout({
         {home ? (
           <>
             <Avatar
-              src="https://d281hw6jrax8rk.cloudfront.net/ryan.jpg"
+              src="/images/ryan.jpg"
               className={`${classes.headerHomeImage} ${classes.borderCircle}`}
               alt={name}
             />
@@ -88,7 +88,7 @@ export default function Layout({
             <Link href="/">
               <a>
                 <Avatar
-                  src="https://d281hw6jrax8rk.cloudfront.net/ryan.jpg"
+                  src="/images/ryan.jpg"
                   className={`${classes.headerImage} ${classes.borderCircle}`}
                   alt={name}
                 />
