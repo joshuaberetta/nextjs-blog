@@ -1,6 +1,6 @@
 ---
-title: "A new post"
-date: "2020-05-16"
+title: A new post
+date: 'Wednesday, June 24, 2020 5:16 AM 3, yyyy'
 ---
 
 # Heading 1
