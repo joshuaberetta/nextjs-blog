@@ -77,7 +77,7 @@ export default function Layout({
         <Link href="/">
           <a>
             <Avatar
-              src="/images/profile.jpg"
+              src="https://d281hw6jrax8rk.cloudfront.net/me.jpg"
               className={`${classes.headerImage} ${classes.borderCircle}`}
               alt={name}
             />
