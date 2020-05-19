@@ -1,6 +1,6 @@
 ---
 title: A new post
-date: 'Wednesday, June 24, 2020 5:16 AM 3, yyyy'
+date: 2020-05-18T22:00:00.000Z
 ---
 
 # Heading 1
