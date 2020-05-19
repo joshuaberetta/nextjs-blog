@@ -56,7 +56,7 @@ export default function Layout({
 }) {
   const classes = useStyles();
 
-  const avatarImage = "https://d281hw6jrax8rk.cloudfront.net/ryan.jpg";
+  // const avatarImage = "https://d281hw6jrax8rk.cloudfront.net/ryan.jpg";
 
   return (
     <div className={classes.container}>
@@ -79,7 +79,7 @@ export default function Layout({
         {home ? (
           <>
             <Avatar
-              src={avatarImage}
+              src={"/images/ryan.jpg"}
               className={`${classes.headerHomeImage} ${classes.borderCircle}`}
               alt={name}
             />
@@ -90,7 +90,7 @@ export default function Layout({
             <Link href="/">
               <a>
                 <Avatar
-                  src={avatarImage}
+                  src={"/images/ryan.jpg"}
                   className={`${classes.headerImage} ${classes.borderCircle}`}
                   alt={name}
                 />
