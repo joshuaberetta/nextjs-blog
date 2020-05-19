@@ -15,8 +15,10 @@ collections:
           name: "date",
           widget: "datetime",
           dateFormat: "YYYY-MM-DD",
+          timeFormat: "HH:mm",
+          format: "LLL",
+          pickerUtc: false,
         }
-      # format: "LLL",
       - { label: "Body", name: "body", widget: "markdown" }
     # files:
     #   - label: "new"
