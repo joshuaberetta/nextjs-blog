@@ -79,7 +79,7 @@ export default function Layout({
         {home ? (
           <>
             <Avatar
-              src={`${process.env.BACKEND_URL}/ryan.jpg`}
+              src={avatarImage}
               className={`${classes.headerHomeImage} ${classes.borderCircle}`}
               alt={name}
             />
@@ -90,7 +90,7 @@ export default function Layout({
             <Link href="/">
               <a>
                 <Avatar
-                  src={`${process.env.BACKEND_URL}/ryan.jpg`}
+                  src={avatarImage}
                   className={`${classes.headerImage} ${classes.borderCircle}`}
                   alt={name}
                 />
