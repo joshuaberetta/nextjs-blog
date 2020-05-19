@@ -1,5 +1,6 @@
 ---
 title: "A new post"
+date: "2020-05-16"
 ---
 
 # Heading 1
