@@ -15,8 +15,8 @@ collections:
           name: "date",
           widget: "datetime",
           dateFormat: "YYYY-MM-DD",
-          format: "LLLL d, yyyy",
         }
+      # format: "LLL",
       - { label: "Body", name: "body", widget: "markdown" }
     # files:
     #   - label: "new"
