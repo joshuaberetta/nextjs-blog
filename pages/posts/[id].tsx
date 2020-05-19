@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core";
 
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import Date from "../../components/date";
+import MyDate from "../../components/date";
 
 const useStyles = makeStyles({
   headingXl: {
@@ -37,9 +37,9 @@ export default function Post({
       </Head>
       <article>
         <h1 className={classes.headingXl}>{postData.title}</h1>
-        {/* <div className={classes.lightText}>
-          <Date dateString={postData.date} />
-        </div> */}
+        <div className={classes.lightText}>
+          <MyDate dateString={postData.date} />
+        </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

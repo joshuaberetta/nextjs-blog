@@ -5,7 +5,7 @@ import { GetStaticProps } from "next";
 
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-// import Date from "../components/date";
+import MyDate from "../components/date";
 
 const useStyles = makeStyles({
   headingMd: {
@@ -35,6 +35,7 @@ export default function Home({
 }: {
   allPostsData: {
     title: string;
+    date: string;
     id: string;
   }[];
 }) {
@@ -48,11 +49,16 @@ export default function Home({
       <section className={classes.headingMd}>
         <h2 className={classes.headingLg}>Blog</h2>
         <ul className={classes.list}>
-          {allPostsData.map(({ id, title }) => (
+          {allPostsData.map(({ id, date, title }) => (
             <li className={classes.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
+              <br />
+              <small className={classes.lightText}>
+                <MyDate dateString={date} />
+                {/* {new Date(date as any).toISOString().slice(0, 10)} */}
+              </small>
             </li>
           ))}
         </ul>
