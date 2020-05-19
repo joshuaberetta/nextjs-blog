@@ -37,9 +37,9 @@ export default function Post({
       </Head>
       <article>
         <h1 className={classes.headingXl}>{postData.title}</h1>
-        <div className={classes.lightText}>
+        {/* <div className={classes.lightText}>
           <Date dateString={postData.date} />
-        </div>
+        </div> */}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

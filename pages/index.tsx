@@ -5,7 +5,7 @@ import { GetStaticProps } from "next";
 
 import Layout, { siteTitle } from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
-import Date from "../components/date";
+// import Date from "../components/date";
 
 const useStyles = makeStyles({
   headingMd: {
@@ -34,7 +34,6 @@ export default function Home({
   allPostsData,
 }: {
   allPostsData: {
-    date: string;
     title: string;
     id: string;
   }[];
@@ -49,15 +48,11 @@ export default function Home({
       <section className={classes.headingMd}>
         <h2 className={classes.headingLg}>Blog</h2>
         <ul className={classes.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, title }) => (
             <li className={classes.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <br />
-              <small className={classes.lightText}>
-                <Date dateString={date} />
-              </small>
             </li>
           ))}
         </ul>
