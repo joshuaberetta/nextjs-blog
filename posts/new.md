@@ -1,6 +1,6 @@
 ---
 title: A new post
-date: "2020-05-18"
+date: 'June 26, 2020 10:18 AM'
 ---
 
 # Heading 1
@@ -15,3 +15,5 @@ for i in range(10):
 ```
 
 > This is a comment block
+
+updating time from cms
